@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic LREN</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="hero" aria-label="动态视觉首页">
+      <div class="waves" aria-hidden="true">
+        <canvas class="waves__canvas" data-waves></canvas>
+      </div>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__noise" aria-hidden="true"></div>
+
+      <header class="site-header" aria-label="主导航">
+        <a class="site-logo" href="/" aria-label="LREN 首页">LREN</a>
+        <nav class="site-nav">
+          <a href="#product-center">产品中心</a>
+          <a href="#ecosystem-center">生态中心</a>
+          <a href="#service-support">服务与支持</a>
+          <a href="#about-us">关于我们</a>
+        </nav>
+        <a class="site-header__cta" href="#purchase-cooperation">购买合作</a>
+      </header>
+
+      <section class="hero__content">
+        <div class="eyebrow">
+          <span class="eyebrow__dot"></span>
+          Deep integration and self-research
+        </div>
+
+        <h1>
+          定制开发
+          <span class="scramble" data-words="生气,微笑,伤心,赞同,惊喜,平静,期待,专注">微笑</span>
+          等多种人类情绪
+        </h1>
+
+        <p class="lead">
+          支持多模态环境感知，为智能交互奠定基础。语音识别准确率高达 98%，文字转语音（TTS）播报效果流畅自然。内置前沿 AI 大模型，赋予机器人强大的上下文理解与逻辑推理能力，使其沟通对答更具智慧，能够深度理解语意与语境，实时生成对应口型，确保口型与语音始终保持精准同步和完美匹配。
+        </p>
+
+        <div class="metrics" aria-label="实时指标">
+          <article class="metric">
+            <span class="metric__label">Signal</span>
+            <strong><span data-counter data-min="82" data-max="99">94</span>%</strong>
+          </article>
+          <article class="metric">
+            <span class="metric__label">Latency</span>
+            <strong><span data-counter data-min="8" data-max="26">12</span>ms</strong>
+          </article>
+          <article class="metric">
+            <span class="metric__label">Vectors</span>
+            <strong><span data-counter data-min="128" data-max="512">256</span>k</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="hero__visual" aria-label="人物形象">
+        <div class="portrait" data-reveal-root>
+          <img src="./assets/portrait.png" alt="穿黑色西装的人物肖像" class="portrait__base" />
+          <div class="portrait__reveal" data-reveal-layer aria-hidden="true"></div>
+        </div>
+        <div class="data-rain data-rain--right" aria-hidden="true"></div>
+
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
